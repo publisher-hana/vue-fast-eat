@@ -24,7 +24,12 @@
     <button class="close" @click="MenuClose"><icon-ic-baseline-close class="ico-close"/></button>
     <ul>
       <li v-for="(category) in categories" :key="category.idCategory">
-        <RouterLink :to="`/meal/category/${category.strCategory}`">{{category.strCategory}}</RouterLink>
+        <RouterLink 
+          :to="`/meal/category/${category.strCategory}`" 
+          @click="MenuClose"
+        >
+          {{ category.strCategory }}
+        </RouterLink>
       </li>
     </ul>
   </div>
