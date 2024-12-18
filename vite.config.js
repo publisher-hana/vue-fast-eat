@@ -21,6 +21,7 @@ export default defineConfig({
       autoInstall: true, // 아이콘 패키지를 자동 설치
     }),
   ],
+  base: '/vue-food-eat/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'), // '@'를 'src'로 설정
