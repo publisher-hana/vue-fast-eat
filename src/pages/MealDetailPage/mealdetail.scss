@@ -1,0 +1,134 @@
+.breadcrumb{
+  height: 60px;
+  padding:1rem 2rem;
+  margin-bottom: 60px;
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex; 
+  align-items: center;
+}
+.detail-box{
+  padding: 40px;
+  background-color: #fff; 
+  h4{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: normal;
+  }
+}
+.top-intro{
+  display: flex;
+  gap: 60px;
+  margin-bottom: 60px;
+  figure{
+    width: 560px;
+    min-height: 420px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.detail-intro{
+  width: 60%;
+  margin-top: 16px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  .detail-tit{
+    padding-bottom: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    border-bottom: 1px solid var(--primary-color);   
+  }
+  .info-list{
+    padding:24px 0;
+    em{
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    li{
+      .source-txt{
+        display: inline-block;
+        width: 486px;
+        vertical-align: middle;
+      }
+      &:last-of-type{
+        margin-top: 20px;
+        span{
+          margin-right: 8px;
+          padding: 4px 8px;
+          border:1px solid var(--primary-color);
+          border-radius: 4px;
+          color:var(--primary-color);
+        }
+      }
+    }
+  }
+  .indredients{
+    margin-top: 40px;
+    padding: 20px 16px;
+    color: #fff;
+    background-color: var(--primary-color);
+    letter-spacing: normal;
+    strong{
+      display: block;
+      margin-bottom: 16px;
+    }
+    li{
+      position: relative;
+      padding-left: 24px;
+      letter-spacing: normal;
+    }
+    .num{
+      position: absolute;
+      top:2px;
+      left: 0;
+      text-align: center;
+      line-height: 18px;
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
+      border-radius: 50%;
+      background-color: #3A9691;
+      margin-right: 6px;
+      letter-spacing: normal;
+    }
+  }
+}
+.detail-box .measure{
+  &-box{
+    margin-bottom:40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:20px;
+    border:1px solid var(--form-border);
+    font-weight: 600;
+    span{
+      line-height: 2;
+    }
+  }
+  &-ico{
+    display: inline-block;
+    margin-right: 4px;
+    color: var(--primary-color);
+    font-size: 14px;
+  }
+}
+.detail-box .intructions{
+  ul li{
+    padding-left: 10px;
+    position: relative;
+    &:before{
+      content: "";
+      width: 2px;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      top:10px;
+      background-color: var(--primary-color);
+    }
+  }
+}
